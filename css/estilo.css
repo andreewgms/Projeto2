@@ -3,21 +3,94 @@
 ********&********
 ****box-size*****
 ****************/
-
-/*#caixa{
-	width: 300px;
-	height: 300px;
+body{
+	display: block;
+}
+#header{
+	/*width: 300px;*/
+	height: 200px;
 	background: #b9c941;
 	padding: 50px;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	/*
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
+	-moz-box-sizing: border-box;	
+}
+#header #logo-area{
+	float: left;
+	width: 25%;
+}
+#header #logo-area img{
+	width: 200px;
 	
 }
+
+#header #menu {
+	float: right;
+}
+
+/*
+************* Menu drop down
+*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	width: 75%;
+}
+
+li {
+	float: left;
+	width: 30%;
+}
+
+li a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	width: 100%;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+	background-color: red;
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/**
+	FIM DROP DOWN
+**/
+/*
+/*
 .arredondamento{
 	border-radius: 150px;
 }
@@ -126,8 +199,4 @@ Gradiente
 	width: 400px;	
 	background: yellow;	
 	transition: width 3s, background 3s;
-}
-#header #logo-area img{
-	width: 200px;
-	background: black;
 }
